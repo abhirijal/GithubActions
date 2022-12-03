@@ -81,7 +81,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Valid_Rijal()
+        public void Divide_Valid_Rijal()
         {
             Assert.AreEqual(5, Program.Divide("5", "1"));
             Assert.AreEqual(3, Program.Divide("6", "2"));
@@ -89,7 +89,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Invalid_Rijal()
+        public void Divide_Invalid_Rijal()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -97,7 +97,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_Null_Rijal()
+        public void Divide_Null_Rijal()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
