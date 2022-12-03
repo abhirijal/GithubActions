@@ -108,7 +108,7 @@ namespace GithubActionsLab
         [Test]
         public void Power_Valid_Rijal()
         {
-            Assert.AreEqual(20, Program.Power("5", "2"));
+            Assert.AreEqual(25, Program.Power("5", "2"));
             Assert.AreEqual(36, Program.Power("6", "2"));
             Assert.AreEqual(101, Program.Power("10", "2"));
         }
